@@ -19,10 +19,11 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
 
 
 <script type="text/javascript">
-var clevertap = {
+  var clevertap = {
     event: [], profile: [], account: [], onUserLogin: [], notifications: [], privacy: []
   };
-  clevertap.account.push({ "id": "9R9-4W6-857Z" }, "global"); 
+  // usa eu1 en lugar de global
+  clevertap.account.push({ "id": "9R9-4W6-857Z" }, "eu1"); 
   clevertap.privacy.push({ optOut: false });
   clevertap.privacy.push({ useIP: false });
 
@@ -36,7 +37,11 @@ var clevertap = {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wzrk, s);
   })();
+</script>
 
+
+
+  <script>
   clevertap.onUserLogin.push({
   "Site": {
     "Name": "María Perez",
