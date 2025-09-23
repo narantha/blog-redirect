@@ -19,21 +19,23 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
 
 
 <script type="text/javascript">
-  var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+var clevertap = {
+    event: [], profile: [], account: [], onUserLogin: [], notifications: [], privacy: []
+  };
   clevertap.account.push({ "id": "9R9-4W6-857Z" }, "global"); 
-  clevertap.privacy.push({optOut: false});
-  clevertap.privacy.push({useIP: false});
-  (function () {
-     var wzrk = document.createElement('script');
-     wzrk.type = 'text/javascript';
-     wzrk.async = true;
-     wzrk.src = (document.location.protocol === 'https:' ? 
-       'https://d2r1yp2w7bby2u.cloudfront.net' : 
-       'http://static.clevertap.com') + '/js/clevertap.min.js';
-     var s = document.getElementsByTagName('script')[0];
-     s.parentNode.insertBefore(wzrk, s);
-  })();
+  clevertap.privacy.push({ optOut: false });
+  clevertap.privacy.push({ useIP: false });
 
+  (function () {
+    var wzrk = document.createElement('script');
+    wzrk.type = 'text/javascript';
+    wzrk.async = true;
+    wzrk.src = (document.location.protocol === 'https:' ? 
+      'https://d2r1yp2w7bby2u.cloudfront.net' : 
+      'http://static.clevertap.com') + '/js/clevertap.min.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wzrk, s);
+  })();
 
   clevertap.onUserLogin.push({
   "Site": {
